@@ -37,7 +37,7 @@ body {
     background-color: firebrick;
     bottom: 50%;
     /* transform: rotate(10deg); */
-    transform-origin: 100% 100%;
+    transform-origin: 50% 100%;
     animation: sec 60s steps(60, end) infinite;
 }
 .minute {
@@ -47,11 +47,11 @@ body {
     background-color: dimgray;
     bottom: 50%;
     animation: sec 3600s steps(60, end) infinite;
-    transform-origin: 100% 100%;
+    transform-origin: 50% 100%;
 }
 
 @keyframes sec {
-    to {
+    100% {
         transform: rotate(360deg);
     }
 }
