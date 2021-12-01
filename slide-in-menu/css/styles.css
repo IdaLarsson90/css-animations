@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgrey;
+}
+.wrapper {
+    position: relative;
+}
+.menu {
+    position: absolute;
+    top: -300px;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    height: 800px;
+    left: -15px;
+    transform: translateX(-350px);
+    padding-top: 3rem;
+}
+.open {
+    transform: translateX(0);
+    transition: linear 1s ;
+}
+
+.menu__option{
+    display: flex;
+    margin-top: 0px;
+    transform: translateX(-350px);
+    transition: all 2s linear;
+}
+.menu__option div {
+    display: flex;
+    flex-direction: column;
+}
+.menu__option__number {
+    padding: 1rem;
+    margin: 0;
+    color: rgb(110, 107, 107);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu__option__title {
+    padding:1rem;
+    margin: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu__option__text {
+    padding: 0 1rem;
+    color: rgb(110, 107, 107);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+nav.open section {
+    transform: translateX(0);
+    /* transition: linear 1s ; */
+    transition-delay: 2s;
+}
+nav.open .what {
+    transform: translateX(0);
+    transition: linear 1s ;
+    transition-delay: 3s;
+}
+nav.open .who {
+    transform: translateX(0);
+    transition: linear 1s ;
+    transition-delay: 4s;
+}
+nav.open .contact {
+    transform: translateX(0);
+    transition: linear 1s ;
+    transition-delay: 5s;
+}
+.button {
+    border-radius: 100%;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:300px;
+}
+
+.main__title {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.main__text {
+    color: rgb(0, 0, 0, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.toggle{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin: 20px;
+    position: fixed;
+    top: 0;
+}

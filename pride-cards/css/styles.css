@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.card {
+    height: 100px;
+    width: 70px;
+    position: absolute;
+    transform-origin: 70% 150%;
+}
+.card--pink {
+    background-color: pink;
+}
+body:hover .card--pink {
+    transition: transform linear 1s;
+    transform: rotate(-40deg);
+}
+body:hover .card--purple {
+    transition: transform linear 1s;
+    background-color: purple;
+    transform: rotate(-30deg);
+}
+body:hover .card--blue {
+    transition: transform linear 1s;
+    background-color: blue;
+    transform: rotate(-20deg);
+}
+body:hover .card--cyan {
+    transition: transform linear 1s;
+    background-color: cyan;
+    transform: rotate(-10deg);
+}
+body:hover .card--teal {
+    background-color: teal;
+    transform: rotate(0deg);
+}
+body:hover .card--green {
+    transition: transform linear 1s;
+    background-color: green;
+    transform: rotate(10deg);
+}
+body:hover .card--yellow {
+    transition: transform linear 1s;
+    background-color: yellow;
+    transform: rotate(20deg);
+}
+body:hover .card--orange {
+    transition: transform linear 1s;
+    background-color: orange;
+    transform: rotate(30deg);
+}
+body:hover .card--red {
+    transition: transform linear 1s;
+    background-color: red;
+    transform: rotate(40deg);
+}

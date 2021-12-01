@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Slide in menu</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <nav class="menu">
+            <section class="menu__option home">
+                <h3 class="menu__option__number">01</h3>
+                <div>
+                    <h2 class="menu__option__title">Home</h2>
+                    <p class="menu__option__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </section>
+            <section class="menu__option what">
+                <h3 class="menu__option__number">02</h3>
+                <div>
+                    <h2 class="menu__option__title">What we do</h2>
+                    <p class="menu__option__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sint molestiae</p>
+                </div>
+            </section>
+             <section class="menu__option who">
+                <h3 class="menu__option__number">03</h3>
+                <div>
+                    <h2 class="menu__option__title">Who we are</h2>
+                    <p class="menu__option__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sint molestiae pariatur enim! Deleniti maxime repellat cumque neque incidunt eveniet molestiae atque est officia saepe quam unde, cum eligendi veritatis.</p>
+                </div>
+            </section>
+            <section class="menu__option contact">
+                <h3 class="menu__option__number">04</h3>
+                <div>
+                    <h2 class="menu__option__title">Contact</h2>
+                    <p class="menu__option__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sint molestiae pariatur enim! Deleniti maxime repellat cumque neque incidunt eveniet molestiae atque est officia saepe quam unde, cum eligendi veritatis.</p>
+                </div>
+             </section>
+            
+        </nav>
+    
+        <button class="toggle"></button>
+        <main class="main">
+            <h1 class="main__title">Hello there</h1>
+            <p class="main__text">Toggle the red button in the left corner</p>
+        </main>
+
+    </div>
+</body>
+<script>
+    document.querySelector('.toggle')
+        .addEventListener('click', (e) => {
+                document.querySelector('nav').classList.toggle('open')
+        })
+</script>
+</html>

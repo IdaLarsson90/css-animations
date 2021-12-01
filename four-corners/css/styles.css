@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #CECECE;
+    display: grid;
+    place-items: center;
+}
+.big-cube {
+    height: 500px;
+    width: 500px;
+    background-color: #fff;    
+}
+.small-cube {
+   background-color: darkgreen;
+    height: 80px;
+    width: 80px;
+    transform: translateX(0);
+    animation: slide 9s forwards infinite;
+}
+@keyframes slide {
+    0%{
+        background-color: darkgreen;
+        /* transform: translateX(0); */
+    }
+    24% {
+        background-color: darkgreen;
+        transform: translateX(525%);
+    }
+    25%{
+        background-color: blueviolet;
+    }
+    49% {
+        background-color: blueviolet;
+        transform: translateY(525%) translateX(525%);
+    }
+    50% {
+        background-color: darkred;
+    }
+    74%{
+        background-color: darkred;
+        transform: translateY(525%);
+    }
+    75% {
+        background-color: goldenrod;
+    }
+    99% {
+        background-color: goldenrod;
+        transform: translateX(0);
+    }
+   100% {
+        background-color: darkgreen;
+    }
+}
