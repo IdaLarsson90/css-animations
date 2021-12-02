@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #cdcdcd;
+    display: grid;
+    place-items: center;
+}
+.wrapper {
+    perspective: 1500px;
+}
+.cube {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 5s linear infinite;
+}
+.side {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+
+.side--one{
+    background-color: rgb(102, 255, 102, 0.5);
+    transform: rotateX(-270deg);
+    transform-origin: bottom;
+}
+.side--two {
+    background-color: rgb(255, 255, 102, 0.5);
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+.side--three {
+    background-color: rgb(255, 51, 255, 0.5);
+}
+.side--four {
+    background-color: rgb(51, 51, 255, 0.5);
+transform: translateZ(-200px);
+}
+.side--five {
+    background-color: rgb(255, 128, 0, 0.5);
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+.side--six {
+    background-color: rgb(255, 0, 0, 0.5);
+    transform:rotateX(-90deg);
+    transform-origin: top;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(0,0,0,0);
+    }
+    100% {
+        transform: rotate3d(1,1,1,360deg);
+
+    }
+}

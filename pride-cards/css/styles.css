@@ -8,14 +8,15 @@ body {
 .wrapper {
     position: relative;
     max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 50px;
+    display: grid;
+    margin-top: 100px;
+    place-items: center;
 }
 .card {
     height: 100px;
     width: 70px;
     position: absolute;
-    transform-origin: 70% 150%;
+    transform-origin: 50% 150%;
 }
 .card--pink {
     background-color: pink;
